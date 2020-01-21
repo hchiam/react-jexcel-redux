@@ -1,11 +1,17 @@
 # React Jexcel Redux
 [![generator-create-redux-app](https://img.shields.io/badge/built%20with-generator--create--redux--app-brightgreen.svg)](https://github.com/jonidelv/generator-create-redux-app)
 
-<https://github.com/hchiam/learning-reactjs/>
+## Howard's notes:
 
-<https://github.com/hchiam/learning-jExcel>
+- Helpful example of adding data to redux state container: <https://github.com/hchiam/react-jexcel-redux/commit/90db044627780ed6262f5e29bb61a24390a4d4b3>
 
-<https://github.com/hchiam/learning-redux>
+- <https://github.com/hchiam/learning-reactjs/>
+
+- <https://github.com/hchiam/learning-jExcel>
+
+- <https://github.com/hchiam/learning-redux>
+
+<hr>
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
 
