@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import jexcel from 'jexcel'
 
 class Jexcel extends React.Component {
