@@ -11,6 +11,21 @@
 
 - <https://github.com/hchiam/learning-redux>
 
+- **action** -> "abstraction": do some more fancy stuff here before calling store.dispatch here instead of inside a component’s custom methods (note: store.dispatch instead of this.props.dispatch)
+- **reducer** -> update state
+- **combineReducers** -> combine different reducers into one state container in index.js when you import rootReducer from '../reducers' in files in /store folder
+
+- **component action connected to state container** -> this.props.dispatch action on state (instead of store.dispatch), which works once you use import { connect } from 'react-redux'
+function mapStateToProps(state) {
+  return { data: state.data }
+}
+export default connect(mapStateToProps)(Jexcel) // connect component to state
+
+- non-critical extras:
+
+  - **constants/actionTypes** -> “enum” to label actions meaningfully
+  - **prop-types** -> type checking of state data to be stored
+
 <hr>
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
