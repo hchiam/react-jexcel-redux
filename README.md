@@ -16,10 +16,13 @@
 - **combineReducers** -> combine different reducers into one state container in index.js when you import rootReducer from '../reducers' in files in /store folder
 
 - **component action connected to state container** -> this.props.dispatch action on state (instead of store.dispatch), which works once you use import { connect } from 'react-redux'
-function mapStateToProps(state) {
-  return { data: state.data }
-}
-export default connect(mapStateToProps)(Jexcel) // connect component to state
+
+  ```js
+  function mapStateToProps(state) {
+    return { data: state.data }
+  }
+  export default connect(mapStateToProps)(Jexcel) // connect component to state
+  ```
 
 - non-critical extras:
 
