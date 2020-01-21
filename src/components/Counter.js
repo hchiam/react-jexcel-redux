@@ -39,6 +39,7 @@ function getOptions() {
   const options = {
     allowComments: true,
     data: data,
+    rowResize: true,
     columns: [
       {
         type: 'text',
