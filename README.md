@@ -29,6 +29,8 @@
   - **constants/actionTypes** -> “enum” to label actions meaningfully
   - **prop-types** -> type checking of state data to be stored
 
+- You can get a dependency graph of this project by running `bash show_dep_graph.sh`.
+
 <hr>
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
