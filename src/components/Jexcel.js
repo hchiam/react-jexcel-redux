@@ -40,17 +40,7 @@ class Jexcel extends React.Component {
     const cellName = jexcel.getColumnNameFromId([col, row])
     const newData = this.el.getData()
     const change = cellName + ':' + newData[row][col]
-    const rows = newData.length
-    const cols = newData[0].length
-    const comments = []
-    for (let r = 0; r < rows; r++) {
-      for (let c = 0; c < cols; c++) {
-        const comment = this.el.getComments([c, r])
-        if (comment) {
-          comments.push({c, r, comment})
-        }
-      }
-    }
+    const comments = this.el.getComments()
 
     // NOW call the reducer to update state container (and pass along custom parameters onto the action)
     this.props.dispatch({ type: ActionTypes.STORE_DATA, newData, change, comments })
